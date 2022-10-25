@@ -17,6 +17,4 @@ public class EmployeeData {
         return "employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeSalary="
                 + employeeSalary + "";
     }
-
-
 }

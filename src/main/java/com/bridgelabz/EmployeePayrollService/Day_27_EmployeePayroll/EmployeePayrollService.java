@@ -4,13 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class EmployeePayrollService
-{
+public class EmployeePayrollService {
     private List<EmployeeData> employePayrollList = new ArrayList<EmployeeData>();
     Scanner scanner = new Scanner(System.in);
 
-    public void readEmployeeDataFromConsole()
-    {
+    public void readEmployeeDataFromConsole() {
         System.out.println("Enter Employee Id");
         int id = scanner.nextInt();
         System.out.println("Enter Employee Name");
@@ -20,8 +18,7 @@ public class EmployeePayrollService
         employePayrollList.add(new EmployeeData(id, Name, salary));
     }
 
-    public void writeEmployeeDataInConsole() //write the employee data in console.
-    {
-        System.out.println("Writing Employee Pay Roll Data \n"+employePayrollList);
+    public void writeEmployeeDataInConsole() {
+        System.out.println("Writing Employee Pay Roll Data \n" + employePayrollList);
     }
 }
