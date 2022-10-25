@@ -1,22 +1,18 @@
 package com.bridgelabz.EmployeePayrollService.Day_27_EmployeePayroll;
 
-public class EmployeePayRollData
-{
-    private int employeeId;
-    private String employeeName;
-    private int employeeSalary;
+public class EmployeePayRollData {
+    public int id;
+    public String name;
+    public double salary;
 
-    public EmployeePayRollData(int employeeId, String employeeName, int employeeSalary)
-    {
-        super();
-        this.employeeId = employeeId;
-        this.employeeName = employeeName;
-        this.employeeSalary = employeeSalary;
+    public EmployeePayRollData(Integer id, String name, double salary2) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary2;
     }
 
-    @Override
+
     public String toString() {
-        return "employeeId=" + employeeId + ", employeeName=" + employeeName + ", employeeSalary="
-                + employeeSalary + "";
+        return "id = " + id + ", Name = " + name + ", salary = " + salary;
     }
 }
